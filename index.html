@@ -25,7 +25,7 @@
                 <li  class="nav-link skills"><a href="#skills">SKILL</a></li>
                 <li  class="nav-link projects"><a href="#projects">PROJECTS</a></li>
                 <li  class="nav-link contact"><a href="#contact">CONTACT</a></li>
-                <li ><a class="nav-link resume" target="_blank" href="./resume/Kavita-Sharma-Resume.pdf" download id="resume-button-1">RESUME</a></li>
+                <li id="resume-button-1" download>RESUME</li>
                 <script>
                     let btnn = document.getElementById("resume-button-1")
                     btnn.addEventListener("click",()=>{
@@ -41,9 +41,9 @@
         <div>
             <h1 id="user-detail-name">Hi, </span>I am Kavita Sharma</h1>
             <p id="user-detail-intro">A full Stack Web developer</p>
-            <a id="resume-link-2" target="_blank" href="./resume/Kavita-Sharma-Resume.pdf" download> <button id="resume">View Resume</button></a>
+            <a id="resume-link-2" target="_blank" href="./resume/Kavita-Sharma-Resume.pdf" download> <button id="resume-button-2">View Resume</button></a>
             <script>
-                let btn = document.querySelector("#resume")
+                let btn = document.querySelector("#resume-button-2")
                 btn.addEventListener("click",()=>{
                     window.open("https://drive.google.com/file/d/1-VcmV_puULhSoa4yEEp23MRspzrXhLtR/view?usp=share_link","_blank")
                 })
@@ -63,7 +63,7 @@
                 <div class="about-col-1">
                     <img src="Images/1 (2) - Copy.jpg">
                 </div>
-                <div class="about-col-2">
+                <div class="about-section">
                     <h1 class="sub-title">About Me</h1>
                     <p>A passionate aspiring web-developer. Developing websites using HTML, CSS, Javascript, Node.js, Express.js, MongoDB. Always ready to learn new things. Looking forward for new opportunities.I have worked in collaborative environments demonstrating my coding and interpersonal skills to meet deadlines. Looking forward for some interesting and challenging opportunities</p>
                     <div class="tab-titles">
@@ -156,7 +156,7 @@
 <!-- skill part end here -->
 <div id="projects" >
     <h1 class="sub-title">My Projects</h1>
-   <div id="pproject">
+   <div id="project">
     <div class="project-card">
         <img src="./images/img1.png"/>
         <h4 class="project-title">E-commerce Website</h4>

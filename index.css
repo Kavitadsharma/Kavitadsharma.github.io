@@ -95,7 +95,7 @@ flex-wrap: wrap;
     height:auto;
     border-radius: 15px;
 }
-.about-col-2{
+.about-section{
     flex-basis:60%;
 }
 .sub-title{
@@ -197,7 +197,7 @@ margin:10px 0;
   margin-top: 30px;
   padding:10px 10px;
 }
-#pproject{
+#project{
   width:80%;
   margin:auto;
   display: grid;
