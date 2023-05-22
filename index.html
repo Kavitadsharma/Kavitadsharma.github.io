@@ -225,16 +225,26 @@
      </div>
      <script>
         GitHubCalendar(".calendar", "Kavitadsharma");
-    
-        // or enable responsive functionality:
-        GitHubCalendar(".calendar", "Kavitadsharma", { responsive: true });
-    
-        // Use a proxy
-        GitHubCalendar(".calendar", "Kavitadsharma", {
-           proxy (username) {
-             return fetch(`https://your-proxy.com/github?user=${username}`)
-           }
-        }).then(r => r.text())
+
+// Enable responsive functionality:
+GitHubCalendar(".calendar", "Kavitadsharma", { responsive: true });
+
+// Use a proxy
+GitHubCalendar(".calendar", "Kavitadsharma", {
+  proxy(username) {
+    return fetch(`https://your-proxy.com/github?user=${username}`);
+  },
+})
+  .then((response) => response.text())
+  .then((data) => {
+    // Process the calendar data
+    console.log(data);
+  })
+  .catch((error) => {
+    // Handle any errors that occur during the request or processing
+    console.error(error);
+  });
+
     </script>
      
  </div>
