@@ -73,6 +73,7 @@ nav ul li a::after {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width:100px
 }
 
 #resume-button-2:hover {
