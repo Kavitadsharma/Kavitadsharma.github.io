@@ -40,9 +40,7 @@
     <div id="home" >
         <div>
             <h1 id="user-detail-name">Hi, </span>I'm Kavita Sharma</h1>
-            <p id="user-detail-intro">Aspiring Node JS Backend developer skilled in  NodeJS, ExpressJS, MongoDB with a good grasp on core JavaScript concepts. Self-motivated with a strong problem-solving mindset and curious learner.
-                Keen interest in building user-centric products. Looking forward to working in a challenging role with a
-                growth-oriented organization.</p>
+            <!-- <p id="user-detail-intro"></p> -->
            
 <!-- <button> -->
             <button id="resume-button-2" class="nav-link resume">
@@ -68,7 +66,9 @@
                 </div>
                 <div class="about-section">
                     <h1 class="sub-title">About Me</h1>
-                    <p>A passionate aspiring web-developer. Developing websites using HTML, CSS, Javascript, Node.js, Express.js, MongoDB. Always ready to learn new things. Looking forward for new opportunities.I have worked in collaborative environments demonstrating my coding and interpersonal skills to meet deadlines. Looking forward for some interesting and challenging opportunities</p>
+                    <p id="user-detail-intro">Aspiring Node JS Backend developer skilled in  NodeJS, ExpressJS, MongoDB with a good grasp on core JavaScript concepts. Self-motivated with a strong problem-solving mindset and curious learner.
+                        Keen interest in building user-centric products. Looking forward to working in a challenging role with a
+                        growth-oriented organization.</p>
                     <div class="tab-titles">
                        
                         <p class="tab-links"onclick="opentab('education')">Education</p>
@@ -349,28 +349,28 @@ sidemenu.style.right = "-200px";
     })
   </script>
 <SCript> 
-const introElement = document.getElementById("user-detail-intro");
-const introTexts = [
-  "A Full Stack Web Developer",
-  "A Frontend Developer",
-  "A Backend Developer",
-];
-let textIndex = 0;
-let charIndex = 0;
+// const introElement = document.getElementById("user-detail-intro");
+// const introTexts = [
+//   "A Full Stack Web Developer",
+//   "A Frontend Developer",
+//   "A Backend Developer",
+// ];
+// let textIndex = 0;
+// let charIndex = 0;
 
-function showNextCharacter() {
-  if (charIndex <= introTexts[textIndex].length) {
-    introElement.innerText = introTexts[textIndex].substring(0, charIndex);
-    charIndex++;
-    setTimeout(showNextCharacter, 100); // Adjust the delay between characters here (in milliseconds)
-  } else {
-    charIndex = 0;
-    textIndex = (textIndex + 1) % introTexts.length;
-    setTimeout(showNextCharacter, 1000); // Adjust the delay between texts here (in milliseconds)
-  }
-}
+// function showNextCharacter() {
+//   if (charIndex <= introTexts[textIndex].length) {
+//     introElement.innerText = introTexts[textIndex].substring(0, charIndex);
+//     charIndex++;
+//     setTimeout(showNextCharacter, 100); // Adjust the delay between characters here (in milliseconds)
+//   } else {
+//     charIndex = 0;
+//     textIndex = (textIndex + 1) % introTexts.length;
+//     setTimeout(showNextCharacter, 1000); // Adjust the delay between texts here (in milliseconds)
+//   }
+// }
 
-showNextCharacter();
+// showNextCharacter();
 
 </SCript>
 
