@@ -140,7 +140,7 @@ a{
 
 
 
-#about {
+#about1{
   padding: 80px 0;
   color: #112A46;
   margin: auto;
@@ -587,10 +587,10 @@ nav ul .fa-solid{
 #gif{
   margin-top: 50px;
 }
-.about section{
+/* .about section{
   display: flex;
   flex-direction: column;
-}
+} */
 
 
 
