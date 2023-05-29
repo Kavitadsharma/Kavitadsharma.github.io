@@ -19,6 +19,7 @@
     <div id="container" >
         <nav id="nav-menu" >
             <h1>KAVITA SHARMA</h1>
+           
             <ul id="menu">
                 <li  class="nav-link home"><a href="#">HOME</a></li>
                 <li  class="nav-link about"><a href="#about">ABOUT</a></li>
@@ -29,13 +30,9 @@
                     <a href="./resume/Kavita-Sharma-Resume.pdf" target="_blank" id="resume-link-1" download="Kavita-Sharma-Resume">Resume
                      </a>
                   </li>
-                <script>
-                    let btnn = document.getElementById("#resume-button-1")
-                    btnn.addEventListener("click",()=>{
-                        window.open("https://drive.google.com/file/d/1-VcmV_puULhSoa4yEEp23MRspzrXhLtR/view?usp=share_link","_blank")
-                    })
-                </script>
+                  <i id="mobile"class="fa-solid fa-bars" onclick="openmenu()"></i>
                  </ul>
+                
         </nav>
     </div>
 
@@ -44,17 +41,14 @@
         <div>
             <h1 id="user-detail-name">Hi, </span>I'm Kavita Sharma</h1>
             <p id="user-detail-intro">A full Stack Web developer</p>
-
-            <li id="resume-button-2" class="nav-link resume">
+           
+<!-- <button> -->
+            <button id="resume-button-2" class="nav-link resume">
                 <a href="./resume/Kavita-Sharma-Resume.pdf" target="_blank" id="resume-link-2" download="Kavita-Sharma-Resume">Resume
              </a>
-              </li>
-            <!-- <script>
-                let btn = document.querySelector("#resume-button-2")
-                btn.addEventListener("click",()=>{
-                    window.open("https://drive.google.com/file/d/1-VcmV_puULhSoa4yEEp23MRspzrXhLtR/view?usp=share_link","_blank")
-                })
-            </script> -->
+              
+            </button>
+           
            
         </div>
         <div id="gif">
@@ -153,9 +147,14 @@
                 <h5 class="skills-card-name">npm</h5>
             </div>
             <div class="skills-card">
-                <img src="https://cdn.iconscout.com/icon/free/png-512/netlify-3521601-2945045.png?f=avif&w=256"
+                <img src="https://cdn.icon-icons.com/icons2/2622/PNG/96/social_netlify_icon_158189.png"
                     alt="" class="skills-card-img center">
                 <h5 class="skills-card-name">Netlify</h5>
+            </div>
+            <div class="skills-card">
+                <img src="https://cdn.icon-icons.com/icons2/2415/PNG/96/mysql_plain_logo_icon_146414.png"
+                    alt="" class="skills-card-img center">
+                <h5 class="skills-card-name">MySQL</h5>
             </div>
         </div>
     </div>
@@ -300,6 +299,30 @@ GitHubCalendar(".calendar", "Kavitadsharma", {
 
 </div>
 <!-- contact section ends here -->
+<!-- nav script -->
+<script>
+    let btnn = document.getElementById("resume-button-1")
+    btnn.addEventListener("click",()=>{
+        window.open("https://drive.google.com/file/d/1-VcmV_puULhSoa4yEEp23MRspzrXhLtR/view?usp=share_link","_blank")
+    });
+    
+
+    function openmenu() {
+sidemenu.style.right = "0";
+}
+function closemenu() {
+sidemenu.style.right = "-200px";
+}
+
+</script>
+
+
+
+
+
+
+
+
 <script>
     var sidemenu = document.getElementById("sidemenu");
 

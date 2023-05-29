@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0px;
@@ -10,6 +11,9 @@ body {
   background-color: #4d1269;
   color: #fff;
   font-family: 'Poppins', sans-serif;
+}
+.icon{
+  display: none;
 }
 
 #container {
@@ -64,7 +68,9 @@ nav ul li a::after {
   bottom: -6px;
 
 }
-
+#mobile{
+  display:none
+}
 #resume-button-2 {
   background-color:  #7f18afd9;;
   color: white;
@@ -89,8 +95,13 @@ nav ul li a::after {
 #resume-button-2:focus {
   outline: none;
 }
-
+a{
+  color: #fff;
+}
 /* nav complete here */
+
+
+
 #home {
   display: flex;
   justify-content: space-between;
@@ -126,6 +137,9 @@ nav ul li a::after {
 
 
 /* home-css ends here */
+
+
+
 #about {
   padding: 80px 0;
   color: #112A46;
@@ -218,6 +232,8 @@ h1{
 }
 
 /* about end here */
+
+
 #skills {
   padding: 50px 0;
   width: 80%;
@@ -483,7 +499,99 @@ form .btn:hover{
 
 
 
+
 /* contact-css ends here */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
+  #container {
+    padding: 10px 5%;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 10px 5px;
+  }
+  #home {
+    margin-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #user-detail-name {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #user-detail-intro {
+    font-size: 16px;
+  }
+  #about {
+    width: 100%;
+  }
+
+  .sub-title {
+    font-size: 30px;
+  }
+
+  .tab-links {
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+} */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 768px) {
+ #menu{
+  display:none;
+
+ }
+ nav .fa-solid{
+  display:block;
+  font-size:25px;
+  padding:20px
+}
+
+
+nav ul{
+  background:#A491D3;
+  position:fixed;
+  top:0;
+  right:-200px;
+  width:150px;
+  height:100vh;
+  padding-top: 50px;
+  z-index:2
+}
+nav ul li{
+  display:block;
+  margin:25px
+}
+nav ul .fa-solid{
+  position:absolute;
+  top:25px;
+  left:25px;
+  cursor:pointer
+}
+#home {
+  display: flex;
+  flex-direction:column;
+
+}
+#gif{
+  margin-top: 50px;
+}
+.about section{
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 }
