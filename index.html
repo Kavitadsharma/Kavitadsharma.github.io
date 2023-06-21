@@ -40,7 +40,7 @@
     <div id="home" >
         <div>
             <h1 id="user-detail-name">Hi, </span>I'm Kavita Sharma</h1>
-            <!-- <p id="user-detail-intro"></p> -->
+            <p id="user-detail-intro1"></p>
            
 <!-- <button> -->
             <button id="resume-button-2" class="nav-link resume">
@@ -349,28 +349,28 @@ sidemenu.style.right = "-200px";
     })
   </script>
 <SCript> 
-// const introElement = document.getElementById("user-detail-intro");
-// const introTexts = [
-//   "A Full Stack Web Developer",
-//   "A Frontend Developer",
-//   "A Backend Developer",
-// ];
-// let textIndex = 0;
-// let charIndex = 0;
+const introElement = document.getElementById("user-detail-intro1");
+const introTexts = [
+  "A Full Stack Web Developer",
+  "A Frontend Developer",
+  "A Backend Developer",
+];
+let textIndex = 0;
+let charIndex = 0;
 
-// function showNextCharacter() {
-//   if (charIndex <= introTexts[textIndex].length) {
-//     introElement.innerText = introTexts[textIndex].substring(0, charIndex);
-//     charIndex++;
-//     setTimeout(showNextCharacter, 100); // Adjust the delay between characters here (in milliseconds)
-//   } else {
-//     charIndex = 0;
-//     textIndex = (textIndex + 1) % introTexts.length;
-//     setTimeout(showNextCharacter, 1000); // Adjust the delay between texts here (in milliseconds)
-//   }
-// }
+function showNextCharacter() {
+  if (charIndex <= introTexts[textIndex].length) {
+    introElement.innerText = introTexts[textIndex].substring(0, charIndex);
+    charIndex++;
+    setTimeout(showNextCharacter, 100); // Adjust the delay between characters here (in milliseconds)
+  } else {
+    charIndex = 0;
+    textIndex = (textIndex + 1) % introTexts.length;
+    setTimeout(showNextCharacter, 1000); // Adjust the delay between texts here (in milliseconds)
+  }
+}
 
-// showNextCharacter();
+showNextCharacter();
 
 </SCript>
 
