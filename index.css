@@ -1,9 +1,17 @@
  body{
   background-color:  #c13be9 ;
-  color: #080808;
+  color: black;
   font-family:"Roboto";
  }
-
+#name{
+  color: #fff;
+}
+#p{
+  color: #FFF;
+}
+#user-detail-name{
+  color: #FFF;
+}
  a{
   text-decoration: none;
  }
